@@ -11,6 +11,7 @@ def getValue(jar):
 
 def main(argv):
     for jar in argv[1:]:
+        # print jar
         key = getKey(jar)
         value = getValue(jar)
         print ("%s=%s" % (key, value))
