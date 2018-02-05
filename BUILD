@@ -121,5 +121,3 @@ py_binary(
   name = "gen-deps", 
   srcs = ["gen-deps.py", ],
 )
-
-# exports_files(["setup_robolectric.bzl"])
