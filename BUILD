@@ -34,7 +34,6 @@ ANDROID_ALL_JARS = [
 
 java_library(
   name = "robolectric",
-  # srcs = [":robolectric-deps.properties"],
   exports = [":robolectric-itself", ":android-all-jars"],
   data = [":robolectric-deps.properties"],
   visibility = ["//visibility:public"],
@@ -123,4 +122,4 @@ py_binary(
   srcs = ["gen-deps.py", ],
 )
 
-exports_files(["setup_robolectric.bzl"])
+# exports_files(["setup_robolectric.bzl"])
